@@ -13,7 +13,7 @@ class HomeController < ApplicationController
   def create
     Post.create(title: params[:title],
                 content: params[:content])
-    # redirect_to "/home/index"
+    redirect_to "/home/index"
     # render json: {"result": "게시물 작성완료"}.to_json
   end
 
