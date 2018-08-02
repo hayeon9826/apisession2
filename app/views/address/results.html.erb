@@ -1,0 +1,5 @@
+<% @results["results"]["juso"].each do |r| %>
+    우편번호: <%= r["zipNo"]%><br>
+    도로명주소: <%= r["roadAddr"]%><br>
+    지번주소: <%= r["jibunAddr"] %><br><hr>
+<% end %>

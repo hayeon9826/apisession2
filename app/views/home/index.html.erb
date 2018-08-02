@@ -1,0 +1,5 @@
+<a href="/home/new">새 글 쓰기</a><br><br>
+<% @posts.each do |p| %>
+    제목: <%= p.title %><br>
+    내용: <%= p.content %><br><br><hr>
+<% end %>
